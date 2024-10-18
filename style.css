@@ -1,0 +1,154 @@
+*,
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navbar {
+    position: relative;
+    background-color: #515151e4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 9px;
+}
+
+.ul-navbar a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #f2f2f2f2;
+    padding: 13px;
+    color: black;
+    list-style-type: none;
+    border-radius: 10px;
+    list-style-type: none;
+    transition: all .5s ease 0s;
+    display:inline-block
+}
+
+.li-navbar {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.ul-navbar a:hover{
+    transform: rotate(2deg);
+    background-color: transparent;
+}
+
+.li-navbar a:hover{
+    transform: rotate(2deg);
+    color: #f4f4f4;
+}
+
+.marquee {
+    background-color: #dbdcd8bb;
+    position: relative;
+    
+}
+
+.berjalan {
+    background: linear-gradient(to right, rgb(250, 0, 0),  rgb(0, 250, 0), rgb(0, 0, 255));;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 0;
+    position: relative;
+}
+
+.title {
+    position: relative;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 100px;
+    font-weight: bolder;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-item {
+    text-align: center;
+    width: 25%;
+    background: #f7f7f7;
+    color: #222;
+    padding: 24px;
+    border-radius: 10px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight:  bolder;
+}
+
+.card-description {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.icon {
+    width: 75px;
+    height: 75px;   
+    margin: 10px;
+    padding: 4px;
+}
+
+footer {
+    margin-top: 95px;
+    padding: 20px;
+    text-align: center;
+    background: #dbdcd8bb;
+    position: relative;
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        flex-direction: column;
+        gap: 0;
+    }
+    .card-item {
+        width: 100%;
+        border-radius: 0 0 0;
+    }
+    .container {
+        padding: 20px;
+    }
+    .berjalan {
+        width: 200vh;
+    }
+}
